@@ -10,7 +10,7 @@
 
 ## Локальная установка
 
-1. Клонировать репозиторий: `git clone https://github.com/312-s/kanban.git`
+1. Клонировать репозиторий: `git@github.com:father-lox/-labs_js_drag-and-drop.git`
 2. Перейти в директорию проекта
 3. Установить зависимость: `npm i`
 4. Запустить сборку стилей: `npm run build-style` _(при разработке `npm run watch-style`)_
