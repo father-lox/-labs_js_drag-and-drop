@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.kanban-table__move-task {
+    border: 7px solid #ffcad6;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.task {
+    transition: transform .6s ease-in-out, margin-top .6s ease-in-out, margin-bottom .6s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.kanban-tasks-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.kanban-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.task_move {
+    transform: scale(.65);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(2rem);
+}

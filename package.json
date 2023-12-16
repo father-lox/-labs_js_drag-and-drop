@@ -1,0 +1,30 @@
+{
+  "name": "drag-and-drop",
+  "version": "1.0.0",
+  "description": "Try make drag&drop mechanism",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-style": "npx tailwindcss -i ./style-tailwind.css -o style.css --watch",
+    "build-style": "npx tailwindcss -i ./style-tailwind.css -o style.css",
+    "prepare": "husky install",
+    "lint": "npm-run-all --silent lint:*",
+    "lint-fix": "npm-run-all --continue-on-error --silent lint-fix:*",
+    "lint:eslint": "eslint .",
+    "lint:stylelint": "stylelint **/*.{less,scss} --aei",
+    "lint-fix:eslint": "npm run lint:eslint -- --fix",
+    "lint-fix:stylelint": "npm run lint:stylelint -- --fix"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@oggetto/eslint-config": "^2.1.0",
+    "@oggetto/eslint-config-base": "^2.1.0",
+    "@tailwindcss/forms": "^0.5.3",
+    "eslint": "8.22.0",
+    "husky": "^8.0.3",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.2.7"
+  }
+}
